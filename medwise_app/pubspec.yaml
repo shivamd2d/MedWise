@@ -1,0 +1,42 @@
+name: medwise_app
+description: A smart pill reminder app to help users manage their medication schedules effectively.
+
+publish_to: 'none' # Remove this line if you want to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  riverpod: ^1.0.0
+  isar: ^3.0.0
+  flutter_local_notifications: ^9.0.0
+  flutter_tts: ^3.0.0
+  camera: ^0.9.0
+  google_ml_kit: ^0.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.0.0
+  isar_generator: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Bold.ttf
+        - asset: fonts/Roboto-Light.ttf
+        - asset: fonts/Roboto-Medium.ttf
+
+  # Add any additional configurations here if needed.
